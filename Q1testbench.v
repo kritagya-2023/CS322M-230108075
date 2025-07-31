@@ -8,6 +8,8 @@ module tb_comparator_1bit;
     );
 
     initial begin
+        $dumpfile("dump.vcd");
+        $dumpvars(0, tb_comparator_1bit);
         $display("A B | o1 o2 o3");
         A = 0; B = 0; #10; $display("%b %b |  %b  %b  %b", A, B, o1, o2, o3);
         A = 0; B = 1; #10; $display("%b %b |  %b  %b  %b", A, B, o1, o2, o3);
