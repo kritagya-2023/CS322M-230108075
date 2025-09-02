@@ -1,0 +1,448 @@
+$date
+	Tue Sep 02 09:04:43 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_link_top $end
+$var wire 1 ! ack $end
+$var wire 8 " data [7:0] $end
+$var wire 8 # last [7:0] $end
+$var wire 1 $ req $end
+$var wire 1 % done $end
+$var reg 1 & clk $end
+$var reg 1 ' rst $end
+$scope module dut $end
+$var wire 1 & clk $end
+$var wire 1 ' rst $end
+$var wire 1 ( req $end
+$var wire 8 ) last_byte [7:0] $end
+$var wire 1 % done $end
+$var wire 8 * data_bus [7:0] $end
+$var wire 1 + ack $end
+$scope module u_master $end
+$var wire 1 & clk $end
+$var wire 1 ' rst $end
+$var wire 1 + ack $end
+$var parameter 3 , S_DONE_PULSE $end
+$var parameter 3 - S_DRIVE $end
+$var parameter 3 . S_DROP_REQ $end
+$var parameter 3 / S_IDLE $end
+$var parameter 3 0 S_WAIT_ACK $end
+$var parameter 3 1 S_WAIT_ACK0 $end
+$var reg 8 2 data [7:0] $end
+$var reg 1 % done $end
+$var reg 2 3 idx [1:0] $end
+$var reg 3 4 nstate [2:0] $end
+$var reg 1 ( req $end
+$var reg 3 5 state [2:0] $end
+$upscope $end
+$scope module u_slave $end
+$var wire 1 & clk $end
+$var wire 8 6 data_in [7:0] $end
+$var wire 1 ( req $end
+$var wire 1 ' rst $end
+$var parameter 2 7 W_ASSERT $end
+$var parameter 2 8 W_DROP $end
+$var parameter 2 9 W_HOLD $end
+$var parameter 2 : W_WAIT_REQ $end
+$var reg 1 + ack $end
+$var reg 2 ; hold_cnt [1:0] $end
+$var reg 8 < last_byte [7:0] $end
+$var reg 2 = nstate [1:0] $end
+$var reg 2 > state [1:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b0 :
+b10 9
+b11 8
+b1 7
+b100 1
+b10 0
+b0 /
+b11 .
+b1 -
+b101 ,
+$end
+#0
+$dumpvars
+bx >
+bx =
+bx <
+bx ;
+bx 6
+bx 5
+bx 4
+bx 3
+bx 2
+x+
+bx *
+bx )
+x(
+1'
+0&
+x%
+x$
+bx #
+bx "
+x!
+$end
+#5000
+b1 4
+b0 =
+0%
+0$
+0(
+b0 "
+b0 *
+b0 2
+b0 6
+b0 5
+b0 3
+b0 #
+b0 )
+b0 <
+0!
+0+
+b0 ;
+b0 >
+1&
+#10000
+0&
+#15000
+1&
+#20000
+0&
+#25000
+1&
+#30000
+0&
+#35000
+0'
+1&
+#40000
+0&
+#45000
+b10 4
+b1 5
+1&
+#50000
+0&
+#55000
+b1 =
+1$
+1(
+b10100000 "
+b10100000 *
+b10100000 2
+b10100000 6
+b10 5
+1&
+#60000
+0&
+#65000
+b11 4
+1!
+1+
+b10100000 #
+b10100000 )
+b10100000 <
+b1 >
+1&
+#70000
+0&
+#75000
+b10 =
+b100 4
+b1 ;
+b11 5
+1&
+#80000
+0&
+#85000
+b11 =
+0$
+0(
+b100 5
+b10 ;
+b10 >
+1&
+#90000
+0&
+#95000
+b0 =
+b11 >
+1&
+#100000
+0&
+#105000
+b1 4
+0!
+0+
+b0 >
+1&
+#110000
+0&
+#115000
+b10 4
+b1 3
+b1 5
+1&
+#120000
+0&
+#125000
+b1 =
+1$
+1(
+b10100001 "
+b10100001 *
+b10100001 2
+b10100001 6
+b10 5
+1&
+#130000
+0&
+#135000
+b11 4
+b0 ;
+1!
+1+
+b10100001 #
+b10100001 )
+b10100001 <
+b1 >
+1&
+#140000
+0&
+#145000
+b100 4
+b10 =
+b11 5
+b1 ;
+1&
+#150000
+0&
+#155000
+b11 =
+b10 ;
+b10 >
+0$
+0(
+b100 5
+1&
+#160000
+0&
+#165000
+b0 =
+b11 >
+1&
+#170000
+0&
+#175000
+b1 4
+0!
+0+
+b0 >
+1&
+#180000
+0&
+#185000
+b10 4
+b1 5
+b10 3
+1&
+#190000
+0&
+#195000
+b1 =
+1$
+1(
+b10100010 "
+b10100010 *
+b10100010 2
+b10100010 6
+b10 5
+1&
+#200000
+0&
+#205000
+b11 4
+b0 ;
+1!
+1+
+b10100010 #
+b10100010 )
+b10100010 <
+b1 >
+1&
+#210000
+0&
+#215000
+b10 =
+b100 4
+b1 ;
+b11 5
+1&
+#220000
+0&
+#225000
+b11 =
+0$
+0(
+b100 5
+b10 ;
+b10 >
+1&
+#230000
+0&
+#235000
+b0 =
+b11 >
+1&
+#240000
+0&
+#245000
+b1 4
+0!
+0+
+b0 >
+1&
+#250000
+0&
+#255000
+b10 4
+b11 3
+b1 5
+1&
+#260000
+0&
+#265000
+b1 =
+1$
+1(
+b10100011 "
+b10100011 *
+b10100011 2
+b10100011 6
+b10 5
+1&
+#270000
+0&
+#275000
+b11 4
+b0 ;
+1!
+1+
+b10100011 #
+b10100011 )
+b10100011 <
+b1 >
+1&
+#280000
+0&
+#285000
+b100 4
+b10 =
+b11 5
+b1 ;
+1&
+#290000
+0&
+#295000
+b11 =
+b10 ;
+b10 >
+0$
+0(
+b100 5
+1&
+#300000
+0&
+#305000
+b0 =
+b11 >
+1&
+#310000
+0&
+#315000
+b101 4
+0!
+0+
+b0 >
+1&
+#320000
+0&
+#325000
+b0 4
+b101 5
+b0 3
+1&
+#330000
+0&
+#335000
+b1 4
+1%
+b0 5
+1&
+#340000
+0&
+#345000
+b10 4
+0%
+b1 5
+1&
+#350000
+0&
+#355000
+b1 =
+1$
+1(
+b10100000 "
+b10100000 *
+b10100000 2
+b10100000 6
+b10 5
+1&
+#360000
+0&
+#365000
+b11 4
+b0 ;
+1!
+1+
+b10100000 #
+b10100000 )
+b10100000 <
+b1 >
+1&
+#370000
+0&
+#375000
+b10 =
+b100 4
+b1 ;
+b11 5
+1&
+#380000
+0&
+#385000
+b11 =
+0$
+0(
+b100 5
+b10 ;
+b10 >
+1&
+#390000
+0&
+#395000
+b0 =
+b11 >
+1&
